@@ -51,7 +51,6 @@ if len(st.session_state.messages) == 0:
     llm_function(chat, initial_prompt)
 
 query = st.chat_input("Gemini Explorer")
-
 if query:
     with st.chat_message("user"):
         st.markdown(query)
